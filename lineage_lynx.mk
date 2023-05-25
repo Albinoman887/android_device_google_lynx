@@ -13,6 +13,9 @@ $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 $(call inherit-product, device/google/gs201/lineage_common.mk)
 $(call inherit-product, device/google/lynx/device-lineage.mk)
 
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7a
