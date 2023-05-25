@@ -19,6 +19,10 @@ persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayLynx
 
+
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
+
 # Build necessary packages for vendor
 
 # Audio
